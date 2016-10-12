@@ -11,6 +11,11 @@
       "name": "watch",
       "description": "Watches test files for changes and re-runs the tests automatically.",
       "type": "boolean"
+    },
+    {
+      "name": "source",
+      "description": "Sets the test to run off of the source files instead of the bundled and compiled files.",
+      "type": "boolean"
     }
   ]
 }
