@@ -65,6 +65,10 @@
 
       return originalDefine(name, deps, m);
     }
+    for (var key in originalDefine) {
+      // Make global define object structure match the original define
+      global.define[key] = originalDefine[key];
+    }
   }
 
   function requireTests() {
